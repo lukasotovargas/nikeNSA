@@ -1,0 +1,72 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+header {
+    background-color: rgb(116, 0, 27);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    img {
+        width: 5%;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 70%;
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+$primary-color: #000;
+$secondary-color: #fff;
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 20px 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        .logo {
+            img {
+                width: 150px;
+            }
+        }
+        .links {
+            a {
+                display: inline-block;
+                margin-right: 15px;
+                color: $secondary-color;
+                text-decoration: none;
+                font-size: 14px;
+                transition: color 0.2s;
+                &:hover {
+                    color: darken($secondary-color, 10%);
+                }
+            }
+        }
+        .social-icons {
+            a {
+                display: inline-block;
+                margin-right: 15px;
+                color: $secondary-color;
+                font-size: 20px;
+                transition: color 0.2s;
+                &:hover {
+                    color: darken($secondary-color, 10%);
+                }
+            }
+        }
+    }
+}
